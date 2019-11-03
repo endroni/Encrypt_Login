@@ -54,6 +54,7 @@
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexao.cs" />
+    <Compile Include="HashCode.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -9,6 +9,7 @@ namespace EncryptLogin
 {
     public class Cadastrar
     {
+        HashCode hc = new HashCode(); 
         SqlCommand cmd = new SqlCommand();
         Conexao conexao = new Conexao();
         public String mensagem = "";
@@ -21,7 +22,7 @@ namespace EncryptLogin
             //Parâmetros
             cmd.Parameters.AddWithValue("@nome", nome);
             cmd.Parameters.AddWithValue("@email", email);
-            cmd.Parameters.AddWithValue("@senha", senha);
+            cmd.Parameters.AddWithValue("@senha", hc.PassHash(senha));
 
             //Conectando com o banco -- Conexao
             try
