@@ -14,7 +14,7 @@ namespace EncryptLogin
         //Construtor
         public Conexao()
         {
-            con.ConnectionString = @"Data Source=DESKTOP-D4GI2KI\SQLEXPRESS;Initial Catalog=db_encrypt_login;User ID=sa;Password=***********";
+            con.ConnectionString = @"Data Source=DESKTOP-D4GI2KI\SQLEXPRESS;Initial Catalog=db_encrypt_login;User ID=sa;Password=123";
         }
 
         // Método Conector

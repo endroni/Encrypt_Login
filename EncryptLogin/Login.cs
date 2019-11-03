@@ -16,5 +16,13 @@ namespace EncryptLogin
         {
             InitializeComponent();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Cadastro form = new EncryptLogin.Cadastro();
+            this.Hide();
+            form.Show();
+        }
     }
 }
+
